@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form validation</title>
+</head>
+<script>
+function validationform()
+{
+	var a = document.demo.firstname.value;
+if(a==""){
+	alert("Please fill out the first name ");
+	return false;
+}
+
+
+var b = document.demo.lastname.value;
+if(b==""){
+	alert("Please fill out the last name ");
+	return false;
+}
+
+
+var c = document.demo.gender.value;
+if(c==""){
+	alert("Please fill out the gender ");
+	return false;
+}
+
+
+var d = document.demo.emailid.value;
+if(d==""){
+	alert("Please fill out the email ");
+	return false;
+}
+}
+</script>
+<body>
+<form name="demo" action="home.html" onsubmit="return validationform()" method="post">
+
+First name:<input type="text" name="firstname"><br><br>
+Last name:<input type="text" name="lastname"><br><br>
+gender:<input type="text" name="gender"><br><br>
+emailid:<input type="email" name="emailid"><br><br>
+
+<input type="submit" Value="SUBMIT">
+
+</body>
+</html>
